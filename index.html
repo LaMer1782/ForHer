@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Elizabeth 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="emoji-layer"></div>
+<div class="fall-layer"></div>
+
+<div class="container">
+
+<!-- PAGE 1 -->
+<div class="section active" id="page1">
+    <h1>Hi!! :)))</h1>
+    <p>so, this is the surprise I was talking about.</p>
+    <button onclick="nextPage()">Continue 🤍</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="section" id="page2">
+    <h1>and so I dedicate</h1>
+    <p>this small piece of song lyric which reminded me of you ☺️</p>
+    <button onclick="nextPage()">Continue</button>
+</div>
+
+<!-- PAGE 3 LYRICS -->
+<div class="section" id="page3">
+
+    <div class="slide active-slide">
+        <p>
+        I know I'd go from rags to riches<br>
+        If you would only say you cared<br>
+        And though my pockets may be empty<br>
+        I'd be a millionaire
+        </p>
+    </div>
+
+    <div class="slide">
+        <p>
+        My clothes may still be torn and tattered<br>
+        But in my heart I'd be a king<br>
+        Your love is all that ever mattered<br>
+        It's everything
+        </p>
+    </div>
+
+    <div class="slide">
+        <p>
+        So open your arms and you'll open the door<br>
+        To all the treasure that I'm living for<br>
+        Hold me and kiss me and tell me you're mine evermore
+        </p>
+    </div>
+
+    <div class="dots">
+        <span class="dot active-dot" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+
+    <!-- IMPORTANT: Added ID -->
+    <button id="lyricsContinue" onclick="nextPage()" style="display:none;">
+        Continue
+    </button>
+
+</div>
+
+<!-- PAGE 4 ROSES -->
+<div id="page4" class="section">
+    <div class="container soft-box">
+        <h1>Roses for you 🌹</h1>
+        <p>But you still remain the prettiest and most fragrant of them all...</p>
+        <button onclick="nextPage()">Continue</button>
+    </div>
+</div>
+
+<!-- PAGE 5 STRAWBERRIES -->
+<div id="page5" class="section">
+    <div class="container soft-box">
+        <h1>Strawberries 🍓</h1>
+        <p>And you are the sweetest of them!!</p>
+        <button onclick="nextPage()">Continue</button>
+    </div>
+</div>
+
+
+<!-- PAGE 6 LOVE CONFESSION -->
+<div class="section" id="page6">
+    <p>
+    And, as I've said multiple times before,<br>
+    but I say this again<br><br>
+    I adore you most dearly, Elizabeth.<br><br>
+    My heart beats for the faintest of your smiles.<br>
+    I light up when you call my name.<br><br>
+    You make me happy, truly.
+    </p>
+    <button onclick="nextPage()">Continue</button>
+</div>
+
+<!-- PAGE 7 VALENTINE -->
+<div class="section" id="page7">
+    <h1>So then…</h1>
+    <h1>Won’t you be my Valentine? 🥹</h1>
+    <div class="val-buttons">
+        <button onclick="alert('You just made me the happiest person alive 🤍')">Yes 💘</button>
+        <button id="noBtn">No 😢</button>
+    </div>
+</div>
+
+</div>
+
+<audio id="bgMusic" src="your-music.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

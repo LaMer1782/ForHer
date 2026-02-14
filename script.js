@@ -197,7 +197,7 @@ function changeBackground() {
         1: "url('bg1.jpg')",
         2: "url('bg2.jpg')",
         3: "none",   // page 3 will be handled manually
-        4: "url('roses-bg.png')",
+        4: "url('roses-bg.jpg')",
         5: "url('strawberry-bg.jpg')",
         6: "url('soft-love-bg.jpg')",
         7: "url('valentine-bg.jpg')"
